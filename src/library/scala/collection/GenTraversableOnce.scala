@@ -8,7 +8,7 @@
 
 package scala
 package collection
-
+c
 import scala.reflect.ClassTag
 import scala.collection.generic.CanBuildFrom
 import scala.annotation.unchecked.{ uncheckedVariance => uV }
@@ -278,7 +278,7 @@ trait GenTraversableOnce[+A] extends Any {
    *
    *  @param  op    the binary operator.
    *  @tparam  B    the result type of the binary operator.
-   *  @return  an option value containing the result of `reduceLeft(op)` is this $coll is nonempty,
+   *  @return  an option value containing the result of `reduceLeft(op)` if this $coll is nonempty,
    *           `None` otherwise.
    */
   def reduceLeftOption[B >: A](op: (B, A) => B): Option[B]
